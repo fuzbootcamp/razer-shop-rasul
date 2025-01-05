@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import AdminGet from '../components/AdminGet/AdminGet';
 import Create from '../components/Create/Create';
 import Search from '../components/Search/Search';
 import axios from 'axios';
+import AdminGet from '../components/Adminget/AdminGet';
 
 const Admin = () => {
   const [devices, setDevices] = useState([]);
