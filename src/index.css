@@ -1,0 +1,683 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #000;
+}
+
+.store {
+  padding: 60px 0;
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    border-bottom: 3px solid lime;
+  }
+}
+
+.store_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 0;
+  .card {
+    width: 100%;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    .fav {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 2;
+      background: none;
+      border: none;
+    }
+    img {
+      border-radius: 10px;
+      background: #111;
+      height: 280px;
+      object-fit: contain;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: gainsboro;
+      font-size: 18px;
+      min-height: 115px;
+    }
+    p {
+      color: #888;
+      font-size: 13px;
+      font-weight: 400;
+      min-height: 75px;
+    }
+    span {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      b {
+        color: #fff;
+        font-size: 18px;
+      }
+      button {
+        padding: 2px 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: lime;
+        color: #000;
+        font-weight: 900;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          padding: 2px 10px;
+        }
+      }
+    }
+  }
+}
+.Home {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/05575b50e6ed9a1d9a5615c544f6bc63/holiday-gift-guide-rgb-homepage-large-2x.webp) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.h-main {
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+
+  h1 {
+    font-size: 53px;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.Home1 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/d24672112ff237ece31fd792eb39dba6/razer-enki-pro-koenigsegg-williams-esports-homepage-large.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.Home2 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/d24672112ff237ece31fd792eb39dba6/razer-deathstalker-pro-tkl-homepage-large.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.cardlar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.Home3 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/84d0946021d11b959bda0545c4d4c234/razer-blade14-quartz-2022-950x580-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.Home4 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/84d0946021d11b959bda0545c4d4c234/razer-blackshark-v2-x-usb-950x580-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.Home5 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/84d0946021d11b959bda0545c4d4c234/razer-strider-chroma-b-950x580-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.Home6 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/31a38664ab12f98afc875824ad783084/new-razer-blade-15-2022-b-950x580-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.Home7 {
+
+  background: url(https://assets2.razerzone.com/images/pnx.assets/84d0946021d11b959bda0545c4d4c234/razer-back-to-school-aug22-b-950x580-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+
+.Home8 { 
+ background: url(https://assets2.razerzone.com/images/pnx.assets/8bb632d5659be24062984f7251e2692b/streamcontroller-homepage-desktop1x.jpg) no-repeat center center/cover;
+  width: 100%;
+  color: #fff;
+  height: 100dvh;
+}
+.f-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding: 60px 0;
+}
+
+.iteam {
+  color: #fff;
+  gap: 20px;
+
+  h2 {
+    color: lime;
+  }
+
+  p {
+    font-weight: 100;
+    color: #9f9f9f;
+  }
+}
+
+.nav1 {
+  background-color: #1f1f1f;
+}
+
+.n1-main {
+
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  a {
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+
+    &:hover {
+      text-decoration: underline;
+      color: lime;
+    }
+  }
+
+}
+.laptop {
+  text-align: center;
+  padding: 60px 0;
+
+  h1 {
+    color: lime;
+  }
+
+  p {
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 19px;
+  }
+}
+
+.cardbar {
+  background-color: #252525;
+  padding: 60px 0;
+}
+
+.cr-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center;
+
+  .card {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 1px solid lime;
+    border-radius: 5px;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  a {
+    color: lime;
+  }
+
+  p {
+    color: #9f9f9f;
+  }
+}
+
+.periav {
+  text-align: center;
+  padding: 60px 0;
+
+  h1 {
+    color: lime;
+
+  }
+
+  p {
+    color: #888;
+    font-size: 20px;
+  }
+}
+
+
+.avimg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.avimage1 {
+  background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/mice-category-558x587-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 580px;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+
+  h1 {
+    font-size: 53px;
+    color: #fff;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  a {
+    color: lime;
+  }
+}
+
+.avimage2 {
+  background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/mousemats-category-558x587-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 580px;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+
+  h1 {
+    font-size: 53px;
+    color: #fff
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  a {
+    color: lime;
+  }
+  
+}
+
+.avimage3 {
+  background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/keyboards-category-558x587-desktop.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 580px;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+
+  h1 {
+    font-size: 53px;
+    color: #fff;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  a {
+    color: lime;
+  }
+
+}
+
+.avimage4 {
+  width: 100%;
+  height: 580px;
+  background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/audio-category-558x587-desktop.jpg) no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+
+  h1 {
+    font-size: 53px;
+    color: #fff;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+
+  a {
+    color: lime;
+  }
+
+}
+
+
+.avtech{
+  background: url(https://assets2.razerzone.com/images/pnx.assets/cd2d636f26bd91dd99923c71b9e84a83/complete-your-set-up-1920x700-desktop-cat-banner.jpg) 
+  no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  height: 699px;
+  
+  h1{
+    color: #fff;
+  }
+  p{
+    color: #9f9f9f;
+  }
+  a{
+    color: lime;
+  }
+}
+.avtechk{
+  background-color: #151515;
+  text-align: center;
+  padding: 60px 0;
+  h1{
+    color: lime;
+  }
+  p{
+    color: #9f9f9f;
+    font-size: 25px;
+  }
+}
+.axav{
+  background-color: #252525;
+}
+.avcard{
+  display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+  
+    padding: 60px 0;
+    .card{
+      width: 100%;
+      background-color: #000;
+      border-bottom: 1px solid lime;
+      
+      img{
+        width: 100%;
+      }
+      
+      h1{
+        color: #fff;
+  
+      }
+      p{
+        color: #9f9f9f;
+      }
+      a{
+        color: lime;
+      }
+    }
+  
+}
+.jas{
+  background: url(https://assets2.razerzone.com/images/pnx.assets/d20a9f320f5d60e2b92043b7d4cc2f7a/ms-audio-banner-desktop.jpg)
+  no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  height: 699px;
+  
+
+}
+.jasyas{
+  margin-left: 1000px;
+  text-align: center;
+  padding: 30px;
+  h1{
+    color: lime;
+
+  }
+  p{
+    color: #9f9f9f;
+  }
+  a{
+    color: lime;
+  }
+}
+
+
+.loading {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.error {
+  width: 100%;
+  height: 87vh;
+  img {
+    width: 100%;
+    height: 87vh;
+    object-fit: cover;
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.fixed_btn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 100;
+  color: lime;
+  font-size: 50px;
+}
+.cart{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .cart_item{
+    width: 100%;
+    height: 230px;
+    border: 2px solid lime;
+    border-radius: 20px;
+    display: flex;align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+color: #fff;
+img{
+  width: 150px;
+}
+.double{
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lime;
+border-radius: 10px;
+
+p{
+  font-size: 14px;
+}
+}
+  }
+}
+.cart_item span{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  button{
+    padding: 0 8px;
+    font-size: 20px;
+    border: 1px solid lime;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+.icon{
+  cursor: pointer;
+  font-size: 24px;
+  transition: 1s;
+  &:hover{
+    transform: scale(2);
+  }
+}
+.cart_total{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-top: 2px solid lime;
+  margin: 40px 0;
+  button{
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: lime;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+  }
+}
+.login_wrap{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.login{
+width: 100%;
+max-width: 400px;
+border-radius: 20px;
+padding: 30px;
+border: 2px solid lime;
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  input{
+    height: 40px;
+    background-color: transparent;
+    border: gainsboro 1px solid;
+    padding-left: 20px;
+    color: #Fff;
+  }
+  button{
+    height: 40px;
+    cursor: pointer;
+  }
+}
+}
+.pinkod_wrap{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .pinkod{
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid lime;
+    border-radius: 10px;
+    padding: 20px;
+
+  }
+  img{
+    display: block;
+    margin: 10px auto;
+  }
+  form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+  }
+  input{
+    height: 40px;
+    font-weight: 900;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  button{
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  p{
+    text-align: center;
+    color: lime;
+  }
+}
+
+.cart_item{
+  margin: 40px 0;
+}
+
+.logout{
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+  button{
+    background-color: lime;
+    border: none;
+    font-size: 19px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
